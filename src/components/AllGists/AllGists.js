@@ -71,8 +71,9 @@ class AllGists extends Component {
     if (this.state.loading) {
       return <h1> Loading... </h1>;
     }
-    if (Object.keys(this.state.gists).length === 0);
+    if (this.state.gists.length === 0){
       return <h1> No gists yet! </h1>
+    }
   }
 
   componentDidMount() {
