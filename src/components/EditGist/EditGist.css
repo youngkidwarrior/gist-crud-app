@@ -1,0 +1,22 @@
+.edit-gist-form {
+  border: 2px solid black;
+  padding: 2rem;
+  margin-top: 2rem;
+  float: right;
+  width: 100%;
+}
+
+.edit-gist-form input {
+  width: 100%;
+}
+.edit-gist-form textarea {
+  width: 100%;
+}
+.edit-gist-display {
+  word-wrap: break-word;
+}
+
+.edit-gist-title,
+.edit-gist-body {
+  word-break: keep-all;
+}

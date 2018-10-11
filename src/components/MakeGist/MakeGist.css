@@ -1,0 +1,32 @@
+.parent {
+    position: relative;
+    z-index: 1;
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.make-gist h2 {
+    text-align: left;
+    padding-left: 4rem; 
+}
+
+
+.all-gists {
+    margin-top: 4rem;
+    display: inline-block;
+}
+.gist-form input{
+    width: 75%;
+    height: 42px;
+    font-size:27px;
+    text-align: center;
+    
+}
+
+.gist-body textarea {
+    width: 90%;
+}
+
+

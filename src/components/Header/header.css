@@ -1,0 +1,22 @@
+.app-top {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: mediumseagreen;
+  display: flex;
+}
+.arrow-back,
+.title {
+  flex: 1;
+}
+.arrow-back {
+  transform: scale(2);
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+}
+.button-wrapper {
+  margin-left: 1.2rem;
+}

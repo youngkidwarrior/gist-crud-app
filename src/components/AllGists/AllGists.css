@@ -1,0 +1,27 @@
+.all-gists-top {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.search-bar {
+  margin: auto;
+  width: 100%;
+}
+.search-bar input {
+  text-align: center;
+}
+
+.all-gists {
+  width: 90%;
+}
+
+.gists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.gists .gist {
+  background-color: #e0ddd5;
+}
