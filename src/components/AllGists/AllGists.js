@@ -106,16 +106,16 @@ class AllGists extends Component {
     }
 
     return (
-      <div className="all-gists">
+      <div className="padding-1">
         {Object.keys(selectedGist).length !== 0 ? (
           <ShowGist gist={selectedGist} />
         ) : null}
 
         <header className="all-gists-top">
           <div className="">
-            <Input
-              className="search-bar"
-              type="text"
+            <input
+              className="Field --search"
+              type="search"
               placeholder="Search Gists..."
               value={this.state.searchString}
               onChange={this.searchGists}

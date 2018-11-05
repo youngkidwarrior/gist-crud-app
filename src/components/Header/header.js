@@ -49,11 +49,10 @@ class Header extends Component {
 
     return (
       <div>
-        <header className="app-top">
+        <header className="backgroundColor-brand padding-1">
           {headerContent}
-          <h1 className="title">Maven Gist Clone</h1>
+          <h1 className="fontGiant textColor-white ">Maven Gist Clone</h1>
         </header>
-        <hr />
       </div>
     );
   }

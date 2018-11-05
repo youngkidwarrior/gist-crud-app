@@ -34,7 +34,7 @@ class Register extends Component {
 
   render() {
     return (
-      <div className="register">
+      <div className="padding-1">
       <h2> Register</h2>
       <form onSubmit={this.handleSubmit}>
         <input

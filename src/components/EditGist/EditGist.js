@@ -53,9 +53,9 @@ class EditGist extends Component {
     var gist = this.state.gist;
 
     return (
-      <div className="container-fluid">
+      <div className="Slats padding-1">
         <Header props={this.state} />
-        <div className="row">
+        <div className="Slat">
           {this.state.loading ? (
             <h1>Loading...</h1>
           ) : (
