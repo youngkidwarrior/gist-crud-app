@@ -12,8 +12,7 @@ class MakeGist extends Component {
     super(props);
     this.state = {
       gist: {},
-      submitted: false,
-      mode: 'javascript'
+      submitted: false
     };
   }
 

@@ -5,10 +5,11 @@ const app = express();
 const mongoose = require('mongoose');
 
 const gistsRoutes = require('./routes/gists');
+const userRoutes = require('./routes/users')
 
 mongoose
   .connect(
-    'mongodb+srv://YoungKidWarrior:kG5QY4ZCMNgVjubF@cluster0-dgued.mongodb.net/MEANapp'
+    'mongodb://localhost:27017/MEANapp'
   )
   .then(() => {
     console.log('Connected to DB');
@@ -35,5 +36,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/gists', gistsRoutes);
+app.use('/api/users', userRoutes);
 
 module.exports = app;

@@ -13,13 +13,15 @@ import configureStore from './store';
 import { Provider } from 'react-redux';
 
 import EditGist from './components/EditGist/EditGist';
+import Register from './components/Register/Register'
 
 ReactDOM.render(
   <Provider store={configureStore()}>
     <BrowserRouter>
       <div>
-        <Route exact path="/" component={App} />
-        <Route path="/:id" component={EditGist} />
+        <Route exact path="/home" component={App} />
+        <Route path="/gist/:id" component={EditGist} />
+        <Route path="/user/register" component={Register}/>
       </div>
     </BrowserRouter>
   </Provider>,
