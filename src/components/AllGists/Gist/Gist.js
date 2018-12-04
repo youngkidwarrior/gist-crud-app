@@ -14,7 +14,7 @@ class Gist extends Component {
       return (
         <Redirect
           to={{
-            pathname: '/' + this.props.updateId
+            pathname: '/gist/' + this.props.updateId
           }}
         />
       );

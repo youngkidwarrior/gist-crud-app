@@ -12,8 +12,7 @@ class MakeGist extends Component {
     super(props);
     this.state = {
       gist: {},
-      submitted: false,
-      mode: 'javascript'
+      submitted: false
     };
   }
 
@@ -48,28 +47,31 @@ class MakeGist extends Component {
 
   render() {
     return (
-      <div className="parent">
-        <div className="make-gist col-md-4">
-          <h2> Make a Gist </h2>
+      <div>
+      <div className="Column --two">
+        <div className="Wrapper">
+          <div className="fontRegularPlus fontWeight-light"> Make a Gist </div>
           <form className="gist-body" onSubmit={this.handleSubmit}>
             <input
+              className="Field"
               required
               rows="5"
               name="title"
               ref={input => (this.getTitle = input)}
               placeholder="Title"
             />
-            <br />
-            <br />
             <textarea
+              className="Field"
               name="content"
               ref={input => (this.getContent = input)}
               placeholder="Gist goes here..."
             />
             <br />
-            <button> Save Gist </button>
+            <button className="Button --narrow --solid-negative"> Save Gist </button>
           </form>
         </div>
+        </div>
+
         <AllGists newGist={this.state} />
       </div>
     );

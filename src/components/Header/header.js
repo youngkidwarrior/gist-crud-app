@@ -24,7 +24,7 @@ class Header extends Component {
 
   componentDidMount() {
     console.log(window.location.href);
-    if (window.location.href !== 'http://localhost:3000/') {
+    if (window.location.href !== 'http://localhost:3000/home') {
       this.setState({
         offLandingPage: true
       });
@@ -40,7 +40,7 @@ class Header extends Component {
         <IconButton
           onClick={() => this.setHome()}
           className="arrow-back"
-          href="/"
+          href="/home"
         >
           <i className="material-icons">arrow_back</i>
         </IconButton>
@@ -49,11 +49,10 @@ class Header extends Component {
 
     return (
       <div>
-        <header className="app-top">
+        <header className="backgroundColor-brand padding-1">
           {headerContent}
-          <h1 className="title">Maven Gist Clone</h1>
+          <h1 className="fontGiant textColor-white ">Maven Gist Clone</h1>
         </header>
-        <hr />
       </div>
     );
   }
