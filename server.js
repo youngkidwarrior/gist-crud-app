@@ -2,6 +2,7 @@ const app = require('./backend/app');
 const debug = require('debug')('http');
 const http = require('http');
 
+
 const normalizePort = val => {
   var port = parseInt(val, 10);
 
@@ -43,6 +44,8 @@ const onListening = () => {
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + port;
   debug('Listening on ' + bind);
 };
+
+
 
 const port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);

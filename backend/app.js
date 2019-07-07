@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const mongoose = require('mongoose');
+const serverless = require('serverless-http');
 
 const gistsRoutes = require('./routes/gists');
 
@@ -35,5 +36,10 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/gists', gistsRoutes);
+app.use('/.netlify/functions/server', gistsRoutes); 
 
+const server = serverless(app);
 module.exports = app;
+module.exports.handler = server;
+
+

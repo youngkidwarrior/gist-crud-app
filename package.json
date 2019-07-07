@@ -21,6 +21,7 @@
     "react-scripts": "2.0.3",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
+    "serverless-http": "^2.0.2",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {

@@ -78,6 +78,7 @@ class AllGists extends Component {
 
   componentDidMount() {
     this.props.fetchGists().then(result => {
+      console.log(result)
       var orderedGists = result.payload.slice(0).reverse();
       this.setState({
         gists: orderedGists,

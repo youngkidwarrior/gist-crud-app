@@ -1,5 +1,6 @@
 export const fetchGists = () => dispatch => {
-  const url = 'http://localhost:8080/api/gists';
+  const url = 'https://netlify-express.netlify.com/.netlify/functions/server';
+  //http://localhost:8080/api/gists;
   dispatch(fetchGistsBegin());
   return fetch(url)
     .then(handleErrors)
