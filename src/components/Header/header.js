@@ -24,7 +24,7 @@ class Header extends Component {
 
   componentDidMount() {
     console.log(window.location.href);
-    if (window.location.href !== 'http://localhost:3000/') {
+    if (window.location.href !== 'https://gistapp.netlify.com') {
       this.setState({
         offLandingPage: true
       });
