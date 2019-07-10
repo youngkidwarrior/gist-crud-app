@@ -11,6 +11,7 @@ class EditGist extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      home:false,
       gist: {},
       loading: true
     };
@@ -54,7 +55,7 @@ class EditGist extends Component {
 
     return (
       <div className="container-fluid">
-        <Header props={this.state} />
+        <Header home={this.state.home} />
         <div className="row">
           {this.state.loading ? (
             <h1>Loading...</h1>

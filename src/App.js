@@ -5,12 +5,19 @@ import Header from './components/Header/header';
 import MakeGist from './components/MakeGist/MakeGist';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      home: true
+    };
+  }
+
   render() {
     return (
       <div className="container-fluid App">
-        <Header props={this.state} />
+        <Header home={this.state.home} />
         <div className="row">
-          <MakeGist />
+          <MakeGist props={this.state} />
         </div>
       </div>
     );

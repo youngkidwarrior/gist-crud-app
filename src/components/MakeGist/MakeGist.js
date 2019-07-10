@@ -70,7 +70,7 @@ class MakeGist extends Component {
             <button> Save Gist </button>
           </form>
         </div>
-        <AllGists newGist={this.state} />
+        <AllGists newGist={this.state} home={this.props.home} />
       </div>
     );
   }
