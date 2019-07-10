@@ -1,5 +1,5 @@
 export const deleteGist = gistId => dispatch => {
-  const url = 'https://gistapp.netlify.com/api/gists/deleteGist';
+  const url = 'https://gistapp.netlify.com/.netlify/functions/app';
   //http://localhost:8080/api/gists;
   dispatch(deleteGistBegin());
   return fetch(url + '/' + gistId, {

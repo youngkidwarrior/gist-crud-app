@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:server": "nodemon server.js",
-    "start:netlify-server": "netlify-lambda build backend"
+    "serve:netlify": "netlify-lambda serve backend",
+    "build:netlify": "netlify-lambda build backend"
   },
   "eslintConfig": {
     "extends": "react-app"
