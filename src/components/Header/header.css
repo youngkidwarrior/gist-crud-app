@@ -16,6 +16,8 @@
 
 .title {
   text-align: center;
+  font-size: 5vw;
+  min-width: 360px;
 }
 .button-wrapper {
   margin-left: 1.2rem;

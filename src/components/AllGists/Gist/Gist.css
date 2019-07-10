@@ -9,6 +9,12 @@
   padding: 10px;
   margin-left: 10px;
   margin-top: 10px;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+  overflow-y:scroll;
+}
+.gist::-webkit-scrollbar { 
+    display: none;  
 }
 
 .gist .gist-title {
@@ -19,6 +25,7 @@
   height: 100%;
   vertical-align: middle;
   display: inline-block;
+  max-height: 10rem
 }
 .gist .edit-gist {
   width: 10%;
@@ -31,6 +38,19 @@
   height: 100%;
   float: right;
 }
+
+
+@media (min-width: 320px) {
+  .gist {
+    max-width: calc(100% - 10px);
+  }
+}
+/* @media (min-width:480px)  {
+
+   .gist {
+    max-width: calc(75% - 10px);
+  }
+   } */
 
 @media (min-width: 1010px) {
   .gist {

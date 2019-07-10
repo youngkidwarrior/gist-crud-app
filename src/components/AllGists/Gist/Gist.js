@@ -32,6 +32,7 @@ class Gist extends Component {
           variant="title"
           className="gist-title"
           onClick={this.props.selectGist.bind(this, gist)}
+          style={{maxHeight: 100}}
           gutterBottom
         >
           {gist.title}
