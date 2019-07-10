@@ -1,5 +1,5 @@
 export const fetchOneGist = gistId => dispatch => {
-  const url = 'https://gistapp.netlify.com/.netlify/functions/app';
+  const url = 'https://gistapp.netlify.com/.netlify/functions/app1Y';
   //http://localhost:8080/api/gists;
   dispatch(fetchOneGistBegin());
   return fetch(url + '/' + gistId)

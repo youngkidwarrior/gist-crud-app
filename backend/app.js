@@ -35,7 +35,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/.netlify/functions', gistsRoutes);
+app.use('/.netlify/functions/app', gistsRoutes);
 
 const server = serverless(app);
 module.exports = app;
